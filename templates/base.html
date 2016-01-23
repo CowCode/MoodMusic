@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="../static/css/base.css" media="screen" />
+    <title>MoodMusic</title>
+    <h1>music &agrave; la mood</h1>
+    <div id ="divider"></div>
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'/>  
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'/>
+{% endblock %}
+</head>
+<body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <footer>This website was written by "CowCode," a coding team from Austin, Texas consisting of Boris Chu, Chris Pulicken, Abhishek Routray, Arjun Talpallikar, and Joshua Yang. Access our github repository here: <a id="linky" href="http://www.github.com/cowcode">www.github.com/cowcode</a></footer>
+</body>
+</html>

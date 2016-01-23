@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{{ super() }}
+{% block content %}
+    <body>
+        <form action="" method="POST" name="index" class="container-fluid">
+            <div class="setup">
+                {{ form.entry(placeholder="Describe your day...", rows=8, cols=47) }}
+            </div>
+        <div class="cTray">
+            <center><img id="tray" src="../static/images/ChalkTray.png" alt="ChalkBoardTray"/></center>
+        </div>
+        <br>
+        <br>
+        <div class="bottomhalf">
+            <div class="nextBtn" align="center">
+                <input type="submit" value="go!" class="button-0">
+            </div>
+        </div>
+        </form>
+    </body>
+<!--    _______________________________
+    in ../static/css/index.css
+    _______________________________-->
+    <style type="text/css">
+        body
+        {
+            background-image: url("../static/images/Burnt Orange Background.png");
+        }
+        .setup
+        {
+            border-radius: 25px;
+            color: white;
+            text-align: justify;
+            height: 380px;
+            margin-top: 75px;
+            width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: -20px;
+        }
+        #entry
+        {
+            font-family: 'Pacifico', cursive;
+            font-size: 25px;
+            font-weight: normal;
+            color: white;
+            background-image: url("../static/images/Chalkboard.png");
+            background-size: 100% 100%;
+            border: 0px;
+            border-radius: 5px 5px 0px 0px;
+            padding: 10px;
+            box-shadow: 5px 5px 5px #000101;
+        }
+        #tray
+        {
+            margin-top: -60px;
+            width: 650px;
+            box-shadow: 3px 3px 3px #000101;
+            margin-left: 13px;
+        }
+        .button-0
+        {
+            position: relative;
+            padding: 0px 0px 0px 10px;
+            border-radius: 5px;
+            color: #ffffff;
+            margin: auto;
+            padding-left: 50px;
+            padding-right: 40px;
+            padding-top: -5px;
+            padding-bottom: 5px;
+            text-decoration: none;  
+            background-color: #000000;
+            border-bottom: 5px solid #000000;
+            text-shadow: 0px 0px #FFFFFF;
+            transition: all 0.1s;
+            -webkit-transition: all 0.1s;
+            font-family: 'Pacifico', cursive;
+            font-size: 40px;
+            box-shadow: 5px 5px 5px #000101;
+            display: inline;
+        }
+        .button-0:hover, 
+        .button-0:focus {
+            text-decoration: none;
+            color: #ffffff;
+            text-shadow: 0px 0px #ffffff;
+        }
+        .button-0:active {
+            transform: translate(0px,5px);
+            -webkit-transform: translate(0px,5px);
+            border-bottom: 1px solid black;
+            color: #ffffff;
+            display: inline-block;
+        }
+    </style>
+{% endblock %}

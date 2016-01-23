@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{{ super() }}
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="../static/css/results.css" media="screen" />
+    <body>
+        <div class="backgroundShapes">
+            <div id="feelings"><p>Feeling {{ mood }}?</p></div>
+            <div class="spotify">
+                <iframe id="spotty" src="{{ spot }}" width="340" height="340" frameborder="0" allowtransparency="true"></iframe>
+            </div>
+            <br>
+            <div class="bottomhalf">
+                <div class="nextBtn" align="center">
+                    <a href="../" class="button-0">again?</a>
+                </div>
+            </div>
+        </div>
+    </body>
+{% endblock %}
